@@ -1,0 +1,4 @@
+- name: install htop package
+  package:
+        name: htop
+        state: latest

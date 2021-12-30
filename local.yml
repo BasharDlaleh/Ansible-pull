@@ -3,7 +3,4 @@
   connection: local
   become: true
   tasks:
-  - name: install htop package
-    package:
-          name: htop
-          state: latest
+  - include: tasks/packages.yml
