@@ -1,0 +1,6 @@
+- name: add cron to periodically run ansible pull
+  cron:
+    name: ansible-pull cronjob
+    user: ansible
+    minute: "*/10"
+    job: ansible-pull -o -U https://github.com/BasharDlaleh/Ansible-pull.git >> /home/ansible/ansible.log
