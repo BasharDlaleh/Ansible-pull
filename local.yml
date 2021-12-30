@@ -4,3 +4,4 @@
   become: true
   tasks:
   - include: tasks/packages.yml
+  - include: tasks/user.yml
